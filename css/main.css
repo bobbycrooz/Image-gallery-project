@@ -1,0 +1,103 @@
+/*-=========================
+===========crooz============
+Style in /css/main.css
+Author: Idris Ifeoluwa
+style tools:
+-----------FlexBox,BEM,SASS
+==========crooz=============
+============================
+ */
+ @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+ * {
+   padding: 0px;
+   margin: 0px;
+   box-sizing: border-box;
+ }
+ 
+body{
+    font-family: "Josefin Sans", sans-serif;;
+}
+
+ .b{
+    border: 1px solid red;
+ }
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+.gallery{
+    text-align: center;
+    width: 300px;
+    margin-top: 50px;
+}
+
+.gallery__images{
+    width: 300px;
+}
+
+.gallery_image{
+    display: none;
+    width: 100%;
+    height: 300px;
+    box-shadow: 0px 13px 5px -8px rgb(32, 32, 32);
+}
+
+.active{
+    display: block;
+}
+
+.buttons{
+    width: 300px;
+    display: inline-flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.btn{
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(3, 96, 112);
+    color: #fff;
+    cursor: pointer;
+    width: 70px;
+    box-shadow: 0px 13px 5px -8px rgb(32, 32, 32);
+}
+
+.btn:disabled{
+    background-color: #777777;
+    cursor: not-allowed;
+}
+
+.btn:hover{
+   /* border: 2px solid cyan; */
+   /* transform: translateY(); */
+}
+
+.btn:focus{
+    outline: none;
+}
+    
+.content{
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.content__head{
+    font-weight: 300;    
+}
+
+.content__blockquote{
+    margin-top: 20px;
+}
+
+cite{
+    margin-top: 10px;
+    color: rgb(124, 124, 124);
+    font-weight: 200;
+}
