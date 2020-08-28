@@ -89,7 +89,8 @@ body{
 }
 
 .content__head{
-    font-weight: 300;    
+    font-weight: 600;   
+    color: rgb(26, 68, 70); 
 }
 
 .content__blockquote{
